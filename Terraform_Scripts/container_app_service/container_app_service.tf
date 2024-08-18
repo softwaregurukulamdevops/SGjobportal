@@ -10,7 +10,7 @@ resource "azurerm_resource_group" "example" {
 
 # Define the Linux App Service Plan for Containers
 resource "azurerm_service_plan" "linux_plan" {
-  name                = "rg-jobportal-linux-app-service-plan"
+  name                = "rg-jobportal-linux-app-plan"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
   os_type             = "Linux"
